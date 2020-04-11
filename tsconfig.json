@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@sizmek/infra-base-components": [
+        "dist/sizmek/infra-base-components"
+      ],
+      "@sizmek/infra-base-components/*": [
+        "dist/sizmek/infra-base-components/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

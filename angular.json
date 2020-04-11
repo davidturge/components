@@ -2,5 +2,41 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "@sizmek/infra-base-components": {
+      "projectType": "library",
+      "root": "projects/sizmek/infra-base-components",
+      "sourceRoot": "projects/sizmek/infra-base-components/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/sizmek/infra-base-components/tsconfig.lib.json",
+            "project": "projects/sizmek/infra-base-components/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sizmek/infra-base-components/src/test.ts",
+            "tsConfig": "projects/sizmek/infra-base-components/tsconfig.spec.json",
+            "karmaConfig": "projects/sizmek/infra-base-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sizmek/infra-base-components/tsconfig.lib.json",
+              "projects/sizmek/infra-base-components/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "@sizmek/infra-base-components"
 }

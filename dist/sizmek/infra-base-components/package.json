@@ -1,0 +1,21 @@
+{
+  "name": "@sizmek/infra-base-components",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/sizmek-infra-base-components.umd.js",
+  "module": "fesm5/sizmek-infra-base-components.js",
+  "es2015": "fesm2015/sizmek-infra-base-components.js",
+  "esm5": "esm5/sizmek-infra-base-components.js",
+  "esm2015": "esm2015/sizmek-infra-base-components.js",
+  "fesm5": "fesm5/sizmek-infra-base-components.js",
+  "fesm2015": "fesm2015/sizmek-infra-base-components.js",
+  "typings": "sizmek-infra-base-components.d.ts",
+  "metadata": "sizmek-infra-base-components.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
